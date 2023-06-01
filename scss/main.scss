@@ -1,6 +1,8 @@
-@import "../node_modules/bootstrap/scss/bootstrap";
+$primary: #A32334;
 
 body main form {
     min-width: 360px;
     width: 35%;
 }
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
