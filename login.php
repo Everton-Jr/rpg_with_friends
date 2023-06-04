@@ -1,3 +1,11 @@
+<?php
+
+require_once('custom_functions.php');
+echo basename(__FILE__, '.*');
+$login = NULL;
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,7 +20,7 @@
 <body>
     <main class="d-flex justify-content-center align-items-center min-vh-100 w-100 bg-dark">
         <!-- Login -->
-        <form action="login.html" class="d-flex flex-column gap-3 text-light">
+        <form action="login.php" class="d-flex flex-column gap-3 text-light">
             <div>
                 <label for="username" class="form-label">Usuário</label>
                 <input type="text" name="username" class="form-control">
