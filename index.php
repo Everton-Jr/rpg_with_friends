@@ -1,11 +1,9 @@
 <?php
 
-require_once('custom_functions.php');
-
-// Redirect("{__DIR__}/../..");
+$ROOT_PATH = '';
+require_once("{$ROOT_PATH}/site_things.php");
 
 $login = NULL;
-
 if (!$login) {
     Redirect('login/');
 }

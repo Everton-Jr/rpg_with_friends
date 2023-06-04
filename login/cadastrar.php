@@ -1,23 +1,11 @@
 <?php
 
-require_once('custom_functions.php');
-echo basename(__FILE__, '.*');
+$ROOT_PATH = '/..';
+require_once(__DIR__."{$ROOT_PATH}/site_things.php");
 $login = NULL;
 
+$cadastrar = new Site('Cadastrar', $login);
 ?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEU RPG</title>
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="scss/main.css">
-</head>
-<body>
     <main class="d-flex justify-content-center align-items-center min-vh-100 w-100 bg-dark">
         <!-- Login -->
         <form action="login.php" class="d-flex flex-column gap-3 text-light">
