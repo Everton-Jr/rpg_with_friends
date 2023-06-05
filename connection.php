@@ -1,5 +1,5 @@
 <?php
-$servername = 'localhost';
+$servername = 'rpg_with_friends';
 $username = 'root';
 $password = '';
 
