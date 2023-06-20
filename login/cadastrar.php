@@ -1,6 +1,6 @@
 <?php
 require_once("{$_SERVER['DOCUMENT_ROOT']}/assets/site_things.php");
-require_once("{$_SERVER['DOCUMENT_ROOT']}/assets/db_connection/connection.php");
+require_once("{$_SERVER['DOCUMENT_ROOT']}/assets/db/connection.php");
 $login = NULL;
 
 $cadastrar = new Site('Cadastrar');
