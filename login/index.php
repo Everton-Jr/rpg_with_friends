@@ -1,14 +1,12 @@
 <?php
-
-$ROOT_PATH = '../';
-require_once("{$ROOT_PATH}site_things.php");
+require_once("{$_SERVER['DOCUMENT_ROOT']}/assets/site_things.php");
 
 $login = NULL;
 
-$cadastrar = new Site('Cadastrar', $ROOT_PATH);
+$login = new Site('Login');
 ?>
 
-<?php $cadastrar->Start() ?>
+<?php echo $login->Start() ?>
 
 <main class="d-flex justify-content-center align-items-center min-vh-100 w-100 bg-dark">
     <!-- Login -->
@@ -25,5 +23,5 @@ $cadastrar = new Site('Cadastrar', $ROOT_PATH);
         <p>Não tem cadastro? <a href="cadastrar.php" class="link-primary link-underline-opacity-0">Cadastrar</a></p>
     </form>
 </main>
-<script src="<?= $ROOT_PATH ?>js/validate/validate_cadastro.js"></script>
-<?php $cadastrar->End() ?>
+<script src="/assets/js/validate/validate_cadastro.js"></script>
+<?php $login->End() ?>

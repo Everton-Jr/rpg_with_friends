@@ -16,26 +16,19 @@ function Alert(string $message) {
     ";
 }
 
-function Links(string $PATH) {
-    ?>
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="scss/main.css">
-    <?php
-}
-
 class Site {
     private string $TITLE;
     private string $ROOT_PATH;
 
-    public function __construct(string $FILE_NAME, string $PATH_TO_ROOT) {
+    public function __construct(string $FILE_NAME) {
         $this->TITLE = $FILE_NAME;
-        $this->ROOT_PATH = $PATH_TO_ROOT;
+        // $this->ROOT_PATH = $ROOT_PATH;
     }
 
     private function Links() {
         ?>
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="<?= $this->ROOT_PATH ?>scss/main.css">
+        <link rel="stylesheet" href="/assets/scss/main.css">
         <?php
     }
 

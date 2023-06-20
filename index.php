@@ -1,7 +1,7 @@
 <?php
 
 $ROOT_PATH = '';
-require_once("{$ROOT_PATH}site_things.php");
+require_once("{$ROOT_PATH}assets/site_things.php");
 
 $login = NULL;
 if (!$login) {

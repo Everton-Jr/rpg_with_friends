@@ -1,16 +1,15 @@
 <?php
-$ROOT_PATH = '../';
-require_once("{$ROOT_PATH}site_things.php");
-require_once("{$ROOT_PATH}db_connection/connection.php");
+require_once("{$_SERVER['DOCUMENT_ROOT']}/assets/site_things.php");
+require_once("{$_SERVER['DOCUMENT_ROOT']}/assets/db_connection/connection.php");
 $login = NULL;
 
-$cadastrar = new Site('Cadastrar', $ROOT_PATH);
+$cadastrar = new Site('Cadastrar');
 ?>
 <?php $cadastrar->Start() ?>
 
 <main class="d-flex justify-content-center align-items-center min-vh-100 w-100 bg-dark">
     <!-- Login -->
-    <form action="<?= $ROOT_PATH ?>db_connection/cadastrar_connection.php" method="POST" class="d-flex flex-column gap-3 text-light">
+    <form action="/assets/db_connection/cadastrar_connection.php" method="POST" class="d-flex flex-column gap-3 text-light">
         <div>
             <label for="name" class="form-label">Nome</label>
             <input type="text" name="name" class="form-control">
@@ -31,5 +30,5 @@ $cadastrar = new Site('Cadastrar', $ROOT_PATH);
         <p>Já tem cadastro? <a href="./" class="link-primary link-underline-opacity-0">Entrar</a></p>
     </form>
 </main>
-<script src="<?= $ROOT_PATH ?>js/validate/validate_cadastro.js"></script>
+<script src="/js/validate/validate_cadastro.js"></script>
 <?php $cadastrar->End() ?>
