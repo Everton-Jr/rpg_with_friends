@@ -13,17 +13,21 @@ $index = new Site('Minhas campanhas');
 
 <?php $index->Start() ?>
 
-<header class="bg-dark">
-    <h1 class="text-light">Minhas campanhas</h1>
-</header>
-
-<main class="d-flex justify-content-center align-items-center min-vh-100 w-100 bg-dark">
-    <div id="cartao-campanha" class="bg-light">
-        <h1>A volta dos que não foram</h1>
-        <p>Uma campanha sobre não sei o que</p>
-        <a href="">Isso é um link para entrar na campanha</a>
+<body class="index">
+    <div class="sidebar bg-primary">   
+        <a href="./?id=teste" class="btn">
+            <span>Campanha 1 - O teste</span>
+        </a>
     </div>
-</main>
-<script src="js/main.js"></script>
+
+    <main class="d-flex justify-content-center align-items-center min-vh-100 w-100 bg-dark">
+        <div id="cartao-campanha" class="bg-light">
+            <h1>A volta dos que não foram</h1>
+            <p>Uma campanha sobre não sei o que</p>
+            <a href="">Isso é um link para entrar na campanha</a>
+        </div>
+    </main>
+</body>
+<script src="assets/js/main.js"></script>
 
 <?php $index->End() ?>
