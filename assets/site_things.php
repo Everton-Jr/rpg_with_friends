@@ -43,13 +43,11 @@ class Site {
             <title><?= $this->TITLE ?></title>
             <?php $this->Links() ?>
         </head>
-        <body>
         <?php
     }
 
     public function End() {
         ?>
-        </body>
         </html>
         <?php
     }
